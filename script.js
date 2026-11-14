@@ -3,35 +3,35 @@
 // =====================================================
 const profile = {
   name: "Azrul Aswat",
-  username: "@azrulaswat",
+  username: "@azrulaswat01",
   roles: ["Instrumentation", "Electrical", "Automation"],
-  bio: "Lulusan D3 Teknik Instrumentasi Politeknik Negeri Batam. Maintenance Technician di Schneider Electric. Terbuka untuk peran Electrical, Instrumentation & PLC/Automation.",
+  bio: "Diploma III Instrumentation Engineering graduate from Politeknik Negeri Batam. Maintenance Technician at Schneider Electric. Open to Electrical, Instrumentation & PLC/Automation roles.",
   openToWork: true,   // false = sembunyikan badge "Open to Work"
   photo: "assets/foto.jpg"   // kosong "" = pakai inisial
 };
 
 // Tiga pilar keahlian (ubah teks kecilnya sesuai yang kamu kuasai)
 const pillars = [
-  { icon: "gauge", title: "Instrumentasi", sub: "Sensor · Kontrol" },
-  { icon: "bolt",  title: "Elektrikal",    sub: "Panel · Uji MV" },
-  { icon: "chip",  title: "Otomasi",       sub: "PLC · Kontrol" }
+  { icon: "gauge", title: "Instrumentation", sub: "Sensors · Control" },
+  { icon: "bolt",  title: "Electrical",      sub: "Panels · MV Test" },
+  { icon: "chip",  title: "Automation",      sub: "PLC · Control" }
 ];
 
-// Tombol dengan url "" otomatis tampil sebagai "Segera".
+// A button with url "" automatically shows as "Soon".
 // Isi URL kalau sudah siap, tombol langsung aktif.
 // type: "primary" (biru terang) atau "secondary" (kaca gelap)
 const links = [
-  { label: "LinkedIn",             desc: "Terhubung secara profesional", url: "https://www.linkedin.com/in/azrul-aswat", icon: "linkedin",  type: "primary" },   // "https://www.linkedin.com/in/usernamekamu"
+  { label: "LinkedIn",             desc: "Connect with me professionally", url: "https://www.linkedin.com/in/azrul-aswat", icon: "linkedin",  type: "primary" },   // "https://www.linkedin.com/in/usernamekamu"
   { label: "Download CV",          desc: "CV Azrul Aswat (PDF)",         url: "assets/CV_Azrul_Aswat.pdf", icon: "file",      type: "primary" },   // link Google Drive
-  { label: "Portofolio Proyek",    desc: "Karya & proyek E&I",           url: "", icon: "briefcase", type: "primary" },   // link Notion / Canva / Drive
-  { label: "Hubungi via WhatsApp", desc: "Peluang kerja & kolaborasi",   url: "https://wa.me/628136788350", icon: "whatsapp",  type: "primary" },   // "https://wa.me/628123456789"
-  { label: "Kirim Email",          desc: "azrul.aswat01@gmail.com",      url: "mailto:azrul.aswat01@gmail.com", icon: "mail", type: "primary" },
-  { label: "Instagram",            desc: "Aktivitas & konten",           url: "", icon: "instagram", type: "secondary" }, // "https://instagram.com/usernamekamu"
-  { label: "GitHub",               desc: "Proyek & kode",                url: "", icon: "github",    type: "secondary" },
-  { label: "Jasa / Usaha Saya",    desc: "Nama usaha menyusul",          url: "", icon: "tool",      type: "secondary" }
+  { label: "Project Portfolio",    desc: "E&I work & projects",          url: "", icon: "briefcase", type: "primary" },   // link Notion / Canva / Drive
+  { label: "Chat on WhatsApp",     desc: "Job & collaboration inquiries", url: "https://wa.me/628136788350", icon: "whatsapp",  type: "primary" },   // "https://wa.me/628123456789"
+  { label: "Send an Email",        desc: "azrul.aswat01@gmail.com",      url: "mailto:azrul.aswat01@gmail.com", icon: "mail", type: "primary" },
+  { label: "Instagram",            desc: "Activities & content",         url: "", icon: "instagram", type: "secondary" }, // "https://instagram.com/usernamekamu"
+  { label: "GitHub",               desc: "Projects & code",              url: "", icon: "github",    type: "secondary" },
+  { label: "My Services / Business", desc: "Business name coming soon", url: "", icon: "tool",      type: "secondary" }
 ];
 
-// true = tombol tanpa URL tampil "Segera" | false = disembunyikan
+// true = buttons without a URL show "Soon" | false = hidden
 const showComingSoon = true;
 
 // =====================================================
@@ -107,7 +107,7 @@ function renderLinks() {
       el.rel = "noopener noreferrer";
     } else {
       el.setAttribute("aria-disabled", "true");
-      el.addEventListener("click", () => toast("Segera hadir"));
+      el.addEventListener("click", () => toast("Coming soon"));
     }
 
     el.innerHTML = `
@@ -116,7 +116,7 @@ function renderLinks() {
         <span class="label">${l.label}</span>
         ${l.desc ? `<span class="desc">${l.desc}</span>` : ""}
       </span>
-      ${ready ? svg("arrow", "go") : '<span class="soon">Segera</span>'}`;
+      ${ready ? svg("arrow", "go") : '<span class="soon">Soon</span>'}`;
     wrap.appendChild(el);
   });
 }
@@ -181,9 +181,9 @@ $("shareBtn").addEventListener("click", async () => {
       await navigator.share(data);
     } else {
       await navigator.clipboard.writeText(location.href);
-      toast("Link disalin!");
+      toast("Link copied!");
     }
-  } catch (e) { /* dibatalkan pengguna */ }
+  } catch (e) { /* cancelled by user */ }
 });
 
 renderProfile();
