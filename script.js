@@ -25,6 +25,7 @@ const links = [
   { label: "Download CV",          desc: "CV Azrul Aswat (PDF)",         url: "assets/CV_Azrul_Aswat.pdf", icon: "file",      type: "primary" },   // link Google Drive
   { label: "Portofolio Proyek",    desc: "Karya & proyek E&I",           url: "", icon: "briefcase", type: "primary" },   // link Notion / Canva / Drive
   { label: "Hubungi via WhatsApp", desc: "Peluang kerja & kolaborasi",   url: "https://wa.me/628136788350", icon: "whatsapp",  type: "primary" },   // "https://wa.me/628123456789"
+  { label: "Kirim Email",          desc: "azrul.aswat01@gmail.com",      url: "mailto:azrul.aswat01@gmail.com", icon: "mail", type: "primary" },
   { label: "Instagram",            desc: "Aktivitas & konten",           url: "", icon: "instagram", type: "secondary" }, // "https://instagram.com/usernamekamu"
   { label: "GitHub",               desc: "Proyek & kode",                url: "", icon: "github",    type: "secondary" },
   { label: "Jasa / Usaha Saya",    desc: "Nama usaha menyusul",          url: "", icon: "tool",      type: "secondary" }
@@ -43,6 +44,7 @@ const icons = {
   linkedin: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>',
   file: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/>',
   briefcase: '<rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>',
+  mail: '<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/>',
   whatsapp: '<path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/>',
   instagram: '<rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4A4 4 0 1 1 12.6 8 4 4 0 0 1 16 11.4z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>',
   github: '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5.1 5.1 0 0 0 19.900 1S18.700.7 16 2.500a13.400 13.400 0 0 0-7 0C6.300.7 5.100 1 5.100 1A5.100 5.100 0 0 0 5 4.800a5.400 5.400 0 0 0-1.500 3.800c0 5.400 3.300 6.600 6.400 7A3.400 3.400 0 0 0 9 18.100V22"/>',
