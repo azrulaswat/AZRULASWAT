@@ -21,11 +21,11 @@ const pillars = [
 // Isi URL kalau sudah siap, tombol langsung aktif.
 // type: "primary" (biru terang) atau "secondary" (kaca gelap)
 const links = [
-  { label: "LinkedIn",             desc: "Connect with me professionally", url: "https://www.linkedin.com/in/azrul-aswat", icon: "linkedin",  type: "primary" },   // "https://www.linkedin.com/in/usernamekamu"
-  { label: "Download CV",          desc: "CV Azrul Aswat (PDF)",         url: "assets/CV_Azrul_Aswat.pdf", icon: "file",      type: "primary" },   // link Google Drive
-  { label: "Project Portfolio",    desc: "E&I work & projects",          url: "", icon: "briefcase", type: "primary" },   // link Notion / Canva / Drive
-  { label: "Chat on WhatsApp",     desc: "Job & collaboration inquiries", url: "https://wa.me/628136788350", icon: "whatsapp",  type: "primary" },   // "https://wa.me/628123456789"
-  { label: "Send an Email",        desc: "azrul.aswat01@gmail.com",      url: "mailto:azrul.aswat01@gmail.com", icon: "mail", type: "primary" },
+  { label: "LinkedIn",             desc: "Connect with me professionally", url: "https://www.linkedin.com/in/azrul-aswat", icon: "linkedin",  type: "secondary" },   // "https://www.linkedin.com/in/usernamekamu"
+  { label: "Download CV",          desc: "CV Azrul Aswat (PDF)",         url: "assets/CV_Azrul_Aswat.pdf", icon: "file",      type: "secondary" },   // link Google Drive
+  { label: "Project Portfolio",    desc: "E&I work & projects",          url: "", icon: "briefcase", type: "secondary" },   // link Notion / Canva / Drive
+  { label: "Chat on WhatsApp",     desc: "Job & collaboration inquiries", url: "https://wa.me/628136788350", icon: "whatsapp",  type: "secondary" },   // "https://wa.me/628123456789"
+  { label: "Send an Email",        desc: "azrul.aswat01@gmail.com",      url: "mailto:azrul.aswat01@gmail.com", icon: "mail", type: "secondary" },
   { label: "Instagram",            desc: "Activities & content",         url: "https://www.instagram.com/azrulaswat01", icon: "instagram", type: "secondary" }, // "https://instagram.com/usernamekamu"
   { label: "GitHub",               desc: "Projects & code",              url: "", icon: "github",    type: "secondary" },
   { label: "My Services / Business", desc: "Business name coming soon", url: "", icon: "tool",      type: "secondary" }
@@ -190,3 +190,4 @@ renderProfile();
 renderPillars();
 renderLinks();
 initWave();
+
