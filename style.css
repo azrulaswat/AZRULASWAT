@@ -149,7 +149,7 @@ h1 {
 .pillar b { display: block; margin-top: 9px; font-family: var(--head); font-size: .78rem; font-weight: 700; letter-spacing: .01em; }
 .pillar small { display: block; margin-top: 4px; font-family: var(--mono); font-size: .56rem; color: var(--muted); letter-spacing: .03em; }
 
-/* ---------- Tautan ---------- */
+/* ---------- Links ---------- */
 .section-label {
   display: flex; align-items: center; gap: 12px;
   margin: 32px 0 14px;
@@ -200,7 +200,7 @@ h1 {
 .go { flex: none; width: 18px; height: 18px; opacity: .85; transition: transform .2s; }
 .link:hover .go { transform: translate(3px, -3px); }
 
-/* Belum ada URL: "Segera" */
+/* No URL yet: "Soon" */
 .link.disabled {
   cursor: default; color: var(--muted); box-shadow: none;
   background: linear-gradient(135deg, rgba(47,109,246,.14), rgba(16,27,52,.5));
