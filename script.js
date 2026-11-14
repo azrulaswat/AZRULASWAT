@@ -26,7 +26,7 @@ const links = [
   { label: "Project Portfolio",    desc: "E&I work & projects",          url: "", icon: "briefcase", type: "primary" },   // link Notion / Canva / Drive
   { label: "Chat on WhatsApp",     desc: "Job & collaboration inquiries", url: "https://wa.me/628136788350", icon: "whatsapp",  type: "primary" },   // "https://wa.me/628123456789"
   { label: "Send an Email",        desc: "azrul.aswat01@gmail.com",      url: "mailto:azrul.aswat01@gmail.com", icon: "mail", type: "primary" },
-  { label: "Instagram",            desc: "Activities & content",         url: "", icon: "instagram", type: "secondary" }, // "https://instagram.com/usernamekamu"
+  { label: "Instagram",            desc: "Activities & content",         url: "https://www.instagram.com/azrulaswat01", icon: "instagram", type: "secondary" }, // "https://instagram.com/usernamekamu"
   { label: "GitHub",               desc: "Projects & code",              url: "", icon: "github",    type: "secondary" },
   { label: "My Services / Business", desc: "Business name coming soon", url: "", icon: "tool",      type: "secondary" }
 ];
